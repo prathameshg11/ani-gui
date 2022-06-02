@@ -1,0 +1,82 @@
+body {
+  /* background-color: #161616; */
+  background-image: url("../public/orange-color-2389676_1280.webp");
+  color: white;
+  height: 100vh;
+  font-size: large;
+}
+
+.home {
+  height: 100vh;
+}
+
+/* .logo {
+} */
+
+.toprow {
+  width: 72%;
+  margin-right: 25px;
+  padding-top: 10px;
+}
+
+#tprrgt {
+  padding-top: 10px;
+}
+
+.topbtn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+#anime-img {
+  width: 100%;
+  height: 300px;
+}
+
+#my-player {
+  width: 100%;
+  height: 300px;
+}
+
+/* #myui {
+  clear : left;
+} */
+
+.inpBtn {
+  width: 80%;
+}
+
+#anime_query {
+  height: 2.5rem;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+}
+
+.fa-search {
+  transform: scale(-1,1);
+}
+
+#searchAnime {
+  width: 10%;
+  background-color: white;
+  height: 2.5rem;
+  border: none;
+}
+
+#itsmylist {
+  width: 80%;
+  border: none;
+  border-radius: 0px;
+}
+
+.epibtn {
+  width: 10.1%;
+  /* background-color: #161616; */
+  background-color: white;
+  color: #797878;
+  /* border: 1px solid #797878; */
+  border: none;
+}

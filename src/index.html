@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anime App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  </head>
+  <body>
+    <div class="home mt-2 mx-3 mb-3">
+      <div class="toprow d-flex justify-content-between mx-auto" style="width: 80%">
+        <div class="logo mb-2">
+          <img src="../public/output-seotoolscentre (1).png" alt="" />
+        </div>
+        <div id="tprrgt" class="d-flex justify-content-end gap-3">
+          <div><button class="topbtn" onclick="haveToDone()">NEWS</button></div>
+          <div><button class="topbtn" onclick="haveToDone()">HELP</button></div>
+          <div><button class="topbtn" onclick="haveToDone()">ABOUT</button></div>
+        </div>
+      </div>
+      <div
+        id="myui"
+        class="d-flex flex-column mx-auto"
+        style="width: 80%"
+      >
+        <!-- <div class="mb-2">Watch you favourite anime without adds and pop ups !</div> -->
+        <div><img src="../public/image-removebg.png" id="anime-img" alt=""></div>
+        <div class="inpBtn d-flex mx-auto">
+          <input
+            type="text"
+            id="anime_query"
+            class="form flex-grow-1 ps-2"
+            placeholder="Enter anime name.."
+          />
+          <button class="" type="button" id="searchAnime" onclick="takeQuery()">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <div id="itsmylist" class="list-group mx-auto"></div>
+        <div id="epList" class="d-flex flex-wrap gap-3 mt-3 mb-3"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
