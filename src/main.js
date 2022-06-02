@@ -396,10 +396,6 @@ function showVisibility(element) {
   document.getElementById("searchAnime").disabled = false;
   let backbtn = document.getElementById("searchAnime");
   backbtn.setAttribute("onclick", "gofromStream()");
-  // let btns = element.getElementsByClassName("epibtn");
-  // for (let i = 0; i < btns.length; i++) {
-  //   btns[i].setAttribute("onclick", "changeEpi(this.textcontent)");
-  // }
 }
 
 function gofromStream() {
@@ -417,15 +413,4 @@ function gofromStream() {
   backbtn.innerHTML = `<i class="fa fa-search"></i>`;
   backbtn.setAttribute("onclick", "takeQuery()");
   document.getElementById("anime_query").focus();
-}
-
-function changeEpi(ep_num) {
-  console.log("inside changeEpi");
-  let video = document.getElementById("my-player");
-  hls.attachMedia(video);
-  hls.stopLoad();
-  // hls.destroy();
-  console.log("first");
-  videoUrl.ajax_url = "/encrypt-ajax.php?";
-  episodeSelected(ep_num);
 }
